@@ -177,7 +177,7 @@ async function analyze(){
 
     let resp;
     try{
-      resp=await fetch('/.netlify/functions/analyze',{
+      resp=await fetch('/api/analyze',{
         method:'POST',
         headers:{'Content-Type':'application/json'},
         body:JSON.stringify(body)
